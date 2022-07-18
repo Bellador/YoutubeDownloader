@@ -1,7 +1,7 @@
 import os
 from pytube import YouTube
 
-def main(LINKS,
+def download(LINKS,
          PROJECT_NAME='yt-videos-download',
          MAX_RESOLUTION='720p',
          MIME_TYPE='video/mp4',
@@ -57,7 +57,7 @@ if __name__ == '__main__':
         'https://www.youtube.com/watch?v=68ugkg9RePc'
     ]
     # -----------------------------------------------
-    main(LINKS, PROJECT_NAME=PROJECT_NAME,
+    download(LINKS, PROJECT_NAME=PROJECT_NAME,
                 MAX_RESOLUTION=MAX_RESOLUTION,
                 MIME_TYPE=MIME_TYPE,
                 VIDEO_AND_AUDIO=VIDEO_AND_AUDIO)
