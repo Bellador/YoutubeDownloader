@@ -2,10 +2,10 @@ import os
 from pytube import YouTube
 
 def main(LINKS,
-         project_name='yt-videos-download',
-         max_res='720p',
-         mime_type='video/mp4',
-         video_and_audio=True):
+         PROJECT_NAME='yt-videos-download',
+         MAX_RESOLUTION='720p',
+         MIME_TYPE='video/mp4',
+         VIDEO_AND_AUDIO=True):
 
     # create project folder (if not present) in local directory for video storing
     VIDEO_SAVE_PATH = f'./{PROJECT_NAME}'
@@ -57,4 +57,7 @@ if __name__ == '__main__':
         'https://www.youtube.com/watch?v=68ugkg9RePc'
     ]
     # -----------------------------------------------
-    main(LINKS, project_name=PROJECT_NAME, max_res=MAX_RESOLUTION, mime_type=MIME_TYPE, video_and_audio=VIDEO_AND_AUDIO)
+    main(LINKS, PROJECT_NAME=PROJECT_NAME,
+                MAX_RESOLUTION=MAX_RESOLUTION,
+                MIME_TYPE=MIME_TYPE,
+                VIDEO_AND_AUDIO=VIDEO_AND_AUDIO)
